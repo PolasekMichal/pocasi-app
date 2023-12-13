@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Počasí</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Přidejte tento element do své HTML stránky -->
+    <div class="card" id="search-card">
+        <div class="search">
+            <input
+                type="text"
+                name="searchbox"
+                class="search-bar"
+                id="search-bar"
+                placeholder="Search..."
+            />
+            <button class="search-btn">🔍</button>
+            <button class="favorite-btn">&#9734;</button>
+        </div>
+        <div class="weather" id="weather">
+            <h1 class="city">Počasí</h1>
+            <div class="temp">
+                <h2></h2>
+            </div>
+            <div class="flex">
+                <img src="" alt="" class="icon" />
+                <div class="description">Město</div>
+            </div>
+            <div class="humidity">Vlhkost</div>
+            <div class="wind">Rychlost větru</div>
+        </div>
+           
+    </div>
+    <div class="card2" id="search-card2">
+        <h2>Historie</h2> 
+        <ul id="historyList"></ul>
+            <h2>Oblíbené</h2> 
+            <ul id="favoritesList"></ul>
+        
+         
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

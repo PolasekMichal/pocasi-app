@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url('pozadi.jpg');
+    background-size: cover; /* zajistí, aby obrázek pokrýval celou plochu */
+    background-position: center; /* zajistí, aby obrázek byl vycentrovaný */
+    background-repeat: no-repeat; /* zabrání opakování obrázku */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px; /* Snížení výšky odsazení uvnitř prvku */
+    margin: 10px; /* Snížení vnějšího odsazení */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lehčí stín na mobilních zařízeních */
+    opacity: 90%;
+}
+
+
+.weather {
+    text-align: center;
+    font-size: 3rem;
+    font-size: 16px;
+}
+
+.weather h2 {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.weather img {
+    transform: scale(2); /* Zvětšení ikon pro počasí */
+}
+.card2 {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Přidáno pro vertikální středění obsahu */
+    opacity: 90%;
+    min-height: 100px; /* Nastavte minimální výšku podle potřeby */
+    min-width: 430px; /* Nastavte minimální šířku podle potřeby */
+}
+
+.card2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+
+}
+
+#historyList,
+#favoritesList {
+    list-style: none;
+    padding: 0;
+}
+
+.card2 h2 {
+    margin-bottom: 0;
+}
+
+.card2 li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.card2 button {
+    display: block; 
+    margin: 10px auto; 
+    padding: 5px 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.card2 button:hover {
+    background-color: red;
+   
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn,
+.favorite-btn {
+    font-size: 1.5rem;
+    background-color: green;
+    border-radius: 20%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 2rem;
+    margin-left: 10px; 
+}
+
+.card2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.card2 ul li {
+    margin-bottom: 10px; 
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.card2-content .icon-for-card2 {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+}
